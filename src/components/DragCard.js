@@ -11,7 +11,6 @@ import {
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 class Grids extends React.Component {
-  
   render() {
     // layout is an array of objects, see the demo for more complete usage
     const layout = [
@@ -26,28 +25,33 @@ class Grids extends React.Component {
     ];
 
     const changeCardColor = (items) => {
-      items.forEach((item)=>{
+      items.forEach((item) => {
         let key = item.i;
         var newColor;
-        switch(item.x) {
+        switch (item.x) {
           case 0:
-            newColor = 'gray';
+            newColor = "gray";
             break;
           case 1:
-            newColor = 'darkblue';
+            newColor = "darkblue";
             break;
           case 2:
-            newColor = '#e10bed';
+            newColor = "#e10bed";
             break;
           case 3:
-            newColor = '#2cf7a9';
+            newColor = "#2cf7a9";
         }
-        let element = document.getElementById(key).getElementsByClassName('card-footer')[0]
-        element.setAttribute('style',element.getAttribute('style')+`;background-color: ${newColor}`)
-      })
+        let element = document
+          .getElementById(key)
+          .getElementsByClassName("card-footer")[0];
+        element.setAttribute(
+          "style",
+          element.getAttribute("style") + `;background-color: ${newColor}`
+        );
+      });
 
       return;
-    }
+    };
     return (
       <ResponsiveGridLayout
         className="layout"
@@ -57,7 +61,7 @@ class Grids extends React.Component {
         containerPadding={[10, 20]}
         useCSSTransforms={true}
         style={{ position: "relative" }}
-        onDragStop={(items)=>changeCardColor(items)}
+        onDragStop={(items) => changeCardColor(items)}
       >
         {/* Card 1 */}
 
@@ -67,7 +71,7 @@ class Grids extends React.Component {
             backgroundColor: "#5a4860",
             textAlign: "left",
             borderRadius: "0.7rem",
-            border: "none"
+            border: "none",
           }}
           key="a"
           id="a"
@@ -84,7 +88,15 @@ class Grids extends React.Component {
             </CCardText>
           </CCardBody>
           <CCardFooter
-            style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "black", backgroundColor: "gray", borderBottomLeftRadius:"0.7rem", borderBottomRightRadius:"0.7rem" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontSize: "0.8rem",
+              color: "black",
+              backgroundColor: "gray",
+              borderBottomLeftRadius: "0.7rem",
+              borderBottomRightRadius: "0.7rem",
+            }}
           >
             <span>Reward: 5$</span>
             <span>Time left: 2 days</span>
@@ -98,7 +110,7 @@ class Grids extends React.Component {
             backgroundColor: "#5a4860",
             textAlign: "left",
             borderRadius: "0.7rem",
-            border: "none"
+            border: "none",
           }}
           key="b"
           id="b"
@@ -115,7 +127,15 @@ class Grids extends React.Component {
             </CCardText>
           </CCardBody>
           <CCardFooter
-            style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "black", backgroundColor: "darkblue", borderBottomLeftRadius:"0.7rem", borderBottomRightRadius:"0.7rem" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontSize: "0.8rem",
+              color: "black",
+              backgroundColor: "darkblue",
+              borderBottomLeftRadius: "0.7rem",
+              borderBottomRightRadius: "0.7rem",
+            }}
           >
             <span>Reward: 5$</span>
             <span>Time left: 2 days</span>
@@ -129,7 +149,7 @@ class Grids extends React.Component {
             backgroundColor: "#5a4860",
             textAlign: "left",
             borderRadius: "0.7rem",
-            border: "none"
+            border: "none",
           }}
           key="c"
           id="c"
@@ -146,7 +166,15 @@ class Grids extends React.Component {
             </CCardText>
           </CCardBody>
           <CCardFooter
-            style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "black", backgroundColor: "#e10bed", borderBottomLeftRadius:"0.7rem", borderBottomRightRadius:"0.7rem" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontSize: "0.8rem",
+              color: "black",
+              backgroundColor: "#e10bed",
+              borderBottomLeftRadius: "0.7rem",
+              borderBottomRightRadius: "0.7rem",
+            }}
           >
             <span>Reward: 5$</span>
             <span>Time left: 2 days</span>
@@ -160,7 +188,7 @@ class Grids extends React.Component {
             backgroundColor: "#5a4860",
             textAlign: "left",
             borderRadius: "0.7rem",
-            border: "none"
+            border: "none",
           }}
           key="d"
           id="d"
@@ -177,7 +205,15 @@ class Grids extends React.Component {
             </CCardText>
           </CCardBody>
           <CCardFooter
-            style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "black", backgroundColor: "#2cf7a9", borderBottomLeftRadius:"0.7rem", borderBottomRightRadius:"0.7rem" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontSize: "0.8rem",
+              color: "black",
+              backgroundColor: "#2cf7a9",
+              borderBottomLeftRadius: "0.7rem",
+              borderBottomRightRadius: "0.7rem",
+            }}
           >
             <span>Reward: 5$</span>
             <span>Time left: 2 days</span>
@@ -192,7 +228,7 @@ class Grids extends React.Component {
             backgroundColor: "#5a4860",
             textAlign: "left",
             borderRadius: "0.7rem",
-            border: "none"
+            border: "none",
           }}
           key="e"
           id="e"
@@ -209,7 +245,15 @@ class Grids extends React.Component {
             </CCardText>
           </CCardBody>
           <CCardFooter
-            style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "black", backgroundColor: "gray", borderBottomLeftRadius:"0.7rem", borderBottomRightRadius:"0.7rem" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontSize: "0.8rem",
+              color: "black",
+              backgroundColor: "gray",
+              borderBottomLeftRadius: "0.7rem",
+              borderBottomRightRadius: "0.7rem",
+            }}
           >
             <span>Reward: 5$</span>
             <span>Time left: 2 days</span>
@@ -223,7 +267,7 @@ class Grids extends React.Component {
             backgroundColor: "#5a4860",
             textAlign: "left",
             borderRadius: "0.7rem",
-            border: "none"
+            border: "none",
           }}
           key="f"
           id="f"
@@ -240,7 +284,15 @@ class Grids extends React.Component {
             </CCardText>
           </CCardBody>
           <CCardFooter
-            style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "black", backgroundColor: "darkblue", borderBottomLeftRadius:"0.7rem", borderBottomRightRadius:"0.7rem" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontSize: "0.8rem",
+              color: "black",
+              backgroundColor: "darkblue",
+              borderBottomLeftRadius: "0.7rem",
+              borderBottomRightRadius: "0.7rem",
+            }}
           >
             <span>Reward: 5$</span>
             <span>Time left: 2 days</span>
@@ -254,7 +306,7 @@ class Grids extends React.Component {
             backgroundColor: "#5a4860",
             textAlign: "left",
             borderRadius: "0.7rem",
-            border: "none"
+            border: "none",
           }}
           key="g"
           id="g"
@@ -271,7 +323,15 @@ class Grids extends React.Component {
             </CCardText>
           </CCardBody>
           <CCardFooter
-            style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "black", backgroundColor: "#e10bed", borderBottomLeftRadius:"0.7rem", borderBottomRightRadius:"0.7rem" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontSize: "0.8rem",
+              color: "black",
+              backgroundColor: "#e10bed",
+              borderBottomLeftRadius: "0.7rem",
+              borderBottomRightRadius: "0.7rem",
+            }}
           >
             <span>Reward: 5$</span>
             <span>Time left: 2 days</span>
@@ -285,7 +345,7 @@ class Grids extends React.Component {
             backgroundColor: "#5a4860",
             textAlign: "left",
             borderRadius: "0.7rem",
-            border: "none"
+            border: "none",
           }}
           key="h"
           id="h"
@@ -302,7 +362,15 @@ class Grids extends React.Component {
             </CCardText>
           </CCardBody>
           <CCardFooter
-            style={{ display: "flex", justifyContent: "space-between", fontSize: "0.8rem", color: "black", backgroundColor: "#2cf7a9", borderBottomLeftRadius:"0.7rem", borderBottomRightRadius:"0.7rem" }}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontSize: "0.8rem",
+              color: "black",
+              backgroundColor: "#2cf7a9",
+              borderBottomLeftRadius: "0.7rem",
+              borderBottomRightRadius: "0.7rem",
+            }}
           >
             <span>Reward: 5$</span>
             <span>Time left: 2 days</span>
