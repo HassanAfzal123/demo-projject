@@ -14,8 +14,8 @@ class Grids extends React.Component {
   render() {
     // layout is an array of objects, see the demo for more complete usage
     const layout = [
-      { i: "a", x: 0, y: 0, w: 0.95, h: 5.5 },
-      { i: "b", x: 1, y: 0, w: 0.95, h: 5 },
+      { i: "a", x: 0, y: 0, w: 0.9, h: 5.5 },
+      { i: "b", x: 1, y: 0, w: 0.9, h: 5.5 },
       { i: "c", x: 2, y: 0, w: 0.9, h: 5 },
       { i: "d", x: 3, y: 0, w: 0.9, h: 5 },
       { i: "e", x: 0, y: 0, w: 0.9, h: 5 },
@@ -27,13 +27,24 @@ class Grids extends React.Component {
       <ResponsiveGridLayout
         className="layout"
         layouts={{ lg: layout }}
-        breakpoints={{ lg: "15%" }}
-        cols={{ lg: 4 }}
+        cols={{ lg: 4, sm: 4, xs: 4, md: 4 }}
         rowHeight={30}
         containerPadding={[10, 20]}
         useCSSTransforms={true}
+        style={{ position: "relative" }}
       >
         <CCard style={{ color: "black" }} key="a">
+          <CCardBody>
+            <CCardHeader>Card title</CCardHeader>
+            <CCardText>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </CCardText>
+            <CCardFooter>Reward</CCardFooter>
+          </CCardBody>
+        </CCard>
+
+        <CCard style={{ color: "black" }} key="b">
           <CCardBody>
             <CCardHeader>Card title</CCardHeader>
             <CCardText>

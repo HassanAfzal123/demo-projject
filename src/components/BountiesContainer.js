@@ -5,9 +5,7 @@ function BountiesContainer() {
   return (
     <>
       <div className="d-flex justify-content-center main-container">
-        <div className="n-main-div flex-column">
-          <h1>Bounties</h1>
-          <hr />
+        <div className="n-main-div">
           <div className="n-secondmain-div text-white">
             <div className="main-cards-div overflow-x-auto">
               <span className="card-1">OPEN BOUNTIES</span>
