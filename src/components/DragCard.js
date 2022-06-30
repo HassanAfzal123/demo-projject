@@ -33,26 +33,32 @@ class Grids extends React.Component {
         useCSSTransforms={true}
         style={{ position: "relative" }}
       >
-        <CCard style={{ color: "black" }} key="a">
+        <CCard
+          style={{
+            color: "white",
+            backgroundColor: "#5a4860",
+            textAlign: "left",
+            borderRadius: "0.7rem",
+          }}
+          key="a"
+        >
+          <CCardHeader>
+            <h5 className="capitalize text-lg" style={{ fontWeight: "bolder" }}>
+              Write A Blogpost For DAOHelper
+            </h5>
+          </CCardHeader>
           <CCardBody>
-            <CCardHeader>Card title</CCardHeader>
-            <CCardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
+            <CCardText style={{ fontSize: "0.9rem" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in er
             </CCardText>
-            <CCardFooter>Reward</CCardFooter>
           </CCardBody>
-        </CCard>
-
-        <CCard style={{ color: "black" }} key="b">
-          <CCardBody>
-            <CCardHeader>Card title</CCardHeader>
-            <CCardText>
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </CCardText>
-            <CCardFooter>Reward</CCardFooter>
-          </CCardBody>
+          <CCardFooter
+            style={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <span>Reward: 5$</span>
+            <span>Time left: 2 days</span>
+          </CCardFooter>
         </CCard>
       </ResponsiveGridLayout>
     );
