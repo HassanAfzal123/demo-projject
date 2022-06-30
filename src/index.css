@@ -61,7 +61,6 @@ code {
   text-align: left;
   font-weight: 700;
   border-width: 1rem;
-  border-bottom: 4px solid;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
   width: 250px; /* or whatever width you want. */
   max-width:250px; /* or whatever width you want. */
@@ -72,8 +71,4 @@ code {
   line-height: 1.75rem;
   padding: 0.75rem 13px;
   flex: 1
-}
-
-.card-header {
-  padding: 0
 }

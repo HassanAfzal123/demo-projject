@@ -18,13 +18,13 @@ function BountiesContainer() {
                 style={{ borderTop: "1px solid grey" }}
               >
                 <div className="main-cards-div overflow-x-auto">
-                  <span className="card-1">OPEN BOUNTIES</span>
+                  <span className="card-1" style={{borderBottom:"4px solid gray"}}>OPEN BOUNTIES</span>
 
-                  <span className="card-1">IN PROGRESSo</span>
+                  <span className="card-1" style={{borderBottom:"4px solid darkblue"}}>IN PROGRESS</span>
 
-                  <span className="card-1">UNDER REVIEW</span>
+                  <span className="card-1" style={{borderBottom:"4px solid #e10bed"}}>UNDER REVIEW</span>
 
-                  <span className="card-1">CLOSE / REWARDED</span>
+                  <span className="card-1" style={{borderBottom:"4px solid #2cf7a9"}}>CLOSE / REWARDED</span>
                 </div>
                 <Grids />
               </div>
